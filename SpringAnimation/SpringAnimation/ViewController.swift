@@ -9,11 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var infoLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+        infoLabel.layer.cornerRadius = 10
     }
 
-
+    @IBAction func nextButtonPressed(_ sender: UIButton) {
+    }
+    
 }
 
