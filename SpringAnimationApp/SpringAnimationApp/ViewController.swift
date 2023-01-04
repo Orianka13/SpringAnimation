@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import SpringAnimation
 
 class ViewController: UIViewController {
 
-    @IBOutlet var infoLabel: UILabel!
+ 
+    @IBOutlet var infoLabel: SpringLabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func nextButtonPressed(_ sender: UIButton) {
+        
     }
     
 }
