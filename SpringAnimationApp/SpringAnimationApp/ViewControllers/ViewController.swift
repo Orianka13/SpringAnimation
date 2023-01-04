@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         infoLabel.animate()
         
         let secondAnimation = Animation.getAnimation()
-        sender.setTitle(secondAnimation.preset, for: .normal)
+        sender.setTitle("Run " + secondAnimation.preset, for: .normal)
         
         setupInfoLabel()
        
