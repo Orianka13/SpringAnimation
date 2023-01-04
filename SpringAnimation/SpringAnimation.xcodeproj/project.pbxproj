@@ -114,6 +114,9 @@
 				Base,
 			);
 			mainGroup = 59C81832295F358B00CDB2B4;
+			packageReferences = (
+				59EBAB9A29659F540051771E /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = 59C8183C295F358B00CDB2B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -362,6 +365,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		59EBAB9A29659F540051771E /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 59C81833295F358B00CDB2B4 /* Project object */;
 }
