@@ -5,28 +5,26 @@
 //  Created by Олеся Егорова on 04.01.2023.
 //
 
-import UIKit
+
 import SpringAnimation
 
 struct Animation {
-    let preset: AnimationPreset
-    let curve: AnimationCurve
-    let force: CGFloat
-    let duration: CGFloat
-    let delay: CGFloat
+    let preset: String
+    let curve: String
+    let force: Int
+    let duration: Int
+    let delay: Int
 }
 
 extension Animation {
-    static func getAnimation() -> Animation? {
+    static func getAnimation() -> Animation {
     
-        guard let preset = AnimationPreset.allCases.randomElement() else { return nil }
-        guard let curve = AnimationCurve.allCases.randomElement() else { return nil }
-        let force = CGFloat(Int.random(in: 0...10))
-        let duration = CGFloat(Int.random(in: 0...10))
-        let delay = CGFloat(Int.random(in: 0...10))
+        let preset = AnimationPreset.allCases.randomElement()?.rawValue ?? ""
+        let curve = AnimationCurve.allCases.randomElement()?.rawValue ?? ""
+        let force = Int.random(in: 0...5)
+        let duration = Int.random(in: 0...3)
+        let delay = Int.random(in: 0...1)
         
-        let animation = Animation(preset: preset, curve: curve, force: force, duration: duration, delay: delay)
-        
-        return animation
+        return Animation(preset: preset, curve: curve, force: force, duration: duration, delay: delay)
     }
 }

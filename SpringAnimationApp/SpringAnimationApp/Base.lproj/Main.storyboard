@@ -20,7 +20,7 @@
                                 <rect key="frame" x="40" y="762" width="334" height="31"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                <buttonConfiguration key="configuration" style="plain" title="Run">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -32,28 +32,33 @@
                                     <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tqM-QD-aIM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuA-wF-OyD" customClass="SpringLabel" customModule="SpringAnimationApp" customModuleProvider="target">
-                                <rect key="frame" x="83.5" y="115" width="247" height="208"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPl-dj-h1F" customClass="SpringLabel" customModule="SpringAnimation">
+                                <rect key="frame" x="66" y="166" width="283" height="181"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="cuA-wF-OyD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9rj-63-5sz"/>
+                            <constraint firstItem="xPl-dj-h1F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="122" id="ENj-lC-ev3"/>
                             <constraint firstItem="tPO-r2-uv9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Hg0-DW-2aF"/>
-                            <constraint firstItem="cuA-wF-OyD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="KlX-6e-OH0"/>
-                            <constraint firstItem="cuA-wF-OyD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.232143" id="Xd8-rS-B2B"/>
-                            <constraint firstItem="cuA-wF-OyD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.596618" id="aLa-XP-yKE"/>
+                            <constraint firstItem="xPl-dj-h1F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="MeP-G1-mfM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xPl-dj-h1F" secondAttribute="trailing" constant="65" id="W4Y-Cs-AaK"/>
+                            <constraint firstItem="xPl-dj-h1F" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.202009" id="lS5-Hl-AV0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tPO-r2-uv9" secondAttribute="bottom" constant="69" id="n6w-Xz-RRt"/>
                             <constraint firstItem="tPO-r2-uv9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="w2e-62-vCO"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="infoLabel" destination="cuA-wF-OyD" id="ihG-9P-EaA"/>
+                        <outlet property="infoLabel" destination="xPl-dj-h1F" id="aja-bn-gqY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
