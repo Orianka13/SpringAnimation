@@ -61,13 +61,11 @@
 		59C8183D295F358B00CDB2B4 /* SpringAnimationApp */ = {
 			isa = PBXGroup;
 			children = (
-				59C8183E295F358B00CDB2B4 /* AppDelegate.swift */,
-				59C81840295F358B00CDB2B4 /* SceneDelegate.swift */,
-				59C81842295F358B00CDB2B4 /* ViewController.swift */,
-				59C8185229659C2200CDB2B4 /* Animation.swift */,
-				59C81844295F358B00CDB2B4 /* Main.storyboard */,
-				59C81847295F358D00CDB2B4 /* Assets.xcassets */,
-				59C81849295F358D00CDB2B4 /* LaunchScreen.storyboard */,
+				59EBABA42965BB0A0051771E /* SupportFiles */,
+				59EBABA52965BB170051771E /* ViewControllers */,
+				59EBABA62965BB240051771E /* Models */,
+				59EBABA82965BB360051771E /* Storyboards */,
+				59EBABA72965BB2D0051771E /* Assets */,
 				59C8184C295F358D00CDB2B4 /* Info.plist */,
 			);
 			path = SpringAnimationApp;
@@ -78,6 +76,48 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59EBABA42965BB0A0051771E /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				59C8183E295F358B00CDB2B4 /* AppDelegate.swift */,
+				59C81840295F358B00CDB2B4 /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		59EBABA52965BB170051771E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				59C81842295F358B00CDB2B4 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		59EBABA62965BB240051771E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				59C8185229659C2200CDB2B4 /* Animation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		59EBABA72965BB2D0051771E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				59C81847295F358D00CDB2B4 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		59EBABA82965BB360051771E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				59C81844295F358B00CDB2B4 /* Main.storyboard */,
+				59C81849295F358D00CDB2B4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
