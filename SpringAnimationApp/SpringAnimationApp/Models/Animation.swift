@@ -13,6 +13,15 @@ struct Animation {
     let force: Int
     let duration: Int
     let delay: Int
+    
+    var info: String { """
+                                preset: \(preset)
+                                curve: \(curve)
+                                force: \(force)
+                                duration: \(duration)
+                                delay: \(delay)
+                            """
+    }
 }
 
 extension Animation {

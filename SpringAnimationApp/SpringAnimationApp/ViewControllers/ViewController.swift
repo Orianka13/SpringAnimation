@@ -41,13 +41,7 @@ class ViewController: UIViewController {
     }
     
     private func setupInfoLabel() {
-        infoLabel.text = """
-                                preset: \(animation.preset)
-                                curve: \(animation.curve)
-                                force: \(animation.force)
-                                duration: \(animation.duration)
-                                delay: \(animation.delay)
-                            """
+        infoLabel.text = animation.info
     }
 }
 
