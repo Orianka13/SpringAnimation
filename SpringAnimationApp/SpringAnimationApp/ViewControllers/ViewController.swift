@@ -27,9 +27,9 @@ class ViewController: UIViewController {
         
         infoLabel.animation = animation.preset
         infoLabel.curve = animation.curve
-        infoLabel.force = CGFloat(animation.force)
-        infoLabel.duration = CGFloat(animation.duration)
-        infoLabel.delay = CGFloat(animation.delay)
+        infoLabel.force = animation.force
+        infoLabel.duration = animation.duration
+        infoLabel.delay = animation.delay
         infoLabel.animate()
         
         let secondAnimation = Animation.getAnimation()

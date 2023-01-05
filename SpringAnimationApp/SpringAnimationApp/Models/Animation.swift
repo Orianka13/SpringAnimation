@@ -10,16 +10,16 @@
 struct Animation {
     let preset: String
     let curve: String
-    let force: Int
-    let duration: Int
-    let delay: Int
+    let force: Double
+    let duration: Double
+    let delay: Double
     
     var info: String { """
                                 preset: \(preset)
                                 curve: \(curve)
-                                force: \(force)
-                                duration: \(duration)
-                                delay: \(delay)
+                                force: \(String(format: "%.02f", force))
+                                duration: \(String(format: "%.02f", duration))
+                                delay: \(String(format: "%.02f", delay))
                             """
     }
 }
@@ -27,10 +27,10 @@ struct Animation {
 extension Animation {
     static func getAnimation() -> Animation {
     
-        return Animation(preset: DataStore.shared.presets.randomElement()?.rawValue ?? "",
-                         curve: DataStore.shared.curves.randomElement()?.rawValue ?? "",
-                         force: Int.random(in: DataStore.shared.force),
-                         duration: Int.random(in: DataStore.shared.duration),
-                         delay: Int.random(in: DataStore.shared.delay))
+        return Animation(preset: DataStore.shared.presets.randomElement()?.rawValue ?? "slideLeft",
+                         curve: DataStore.shared.curves.randomElement()?.rawValue ?? "easeIn",
+                         force: Double.random(in: 1...1.5),
+                         duration: Double.random(in: 0.8...1.6),
+                         delay: Double.random(in: 0...1))
     }
 }
