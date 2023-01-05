@@ -6,7 +6,6 @@
 //
 
 
-import SpringAnimation
 
 struct Animation {
     let preset: String
@@ -19,12 +18,10 @@ struct Animation {
 extension Animation {
     static func getAnimation() -> Animation {
     
-        let preset = AnimationPreset.allCases.randomElement()?.rawValue ?? ""
-        let curve = AnimationCurve.allCases.randomElement()?.rawValue ?? ""
-        let force = Int.random(in: 0...5)
-        let duration = Int.random(in: 0...3)
-        let delay = Int.random(in: 0...1)
-        
-        return Animation(preset: preset, curve: curve, force: force, duration: duration, delay: delay)
+        return Animation(preset: DataStore.shared.presets.randomElement()?.rawValue ?? "",
+                         curve: DataStore.shared.curves.randomElement()?.rawValue ?? "",
+                         force: Int.random(in: DataStore.shared.force),
+                         duration: Int.random(in: DataStore.shared.duration),
+                         delay: Int.random(in: DataStore.shared.delay))
     }
 }

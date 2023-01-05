@@ -15,6 +15,7 @@
 		59C8184B295F358D00CDB2B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C81849295F358D00CDB2B4 /* LaunchScreen.storyboard */; };
 		59C8185329659C2200CDB2B4 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C8185229659C2200CDB2B4 /* Animation.swift */; };
 		59EBABA32965A8DF0051771E /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 59EBABA22965A8DF0051771E /* SpringAnimation */; };
+		59EBABAA2966BA1F0051771E /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EBABA92966BA1F0051771E /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		59C8184A295F358D00CDB2B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59C8184C295F358D00CDB2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59C8185229659C2200CDB2B4 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		59EBABA92966BA1F0051771E /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				59EBABA82965BB360051771E /* Storyboards */,
 				59EBABA72965BB2D0051771E /* Assets */,
 				59C8184C295F358D00CDB2B4 /* Info.plist */,
+				59EBABAB2966BA250051771E /* Services */,
 			);
 			path = SpringAnimationApp;
 			sourceTree = "<group>";
@@ -118,6 +121,14 @@
 				59C81849295F358D00CDB2B4 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		59EBABAB2966BA250051771E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				59EBABA92966BA1F0051771E /* DataStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 				59C81843295F358B00CDB2B4 /* ViewController.swift in Sources */,
 				59C8183F295F358B00CDB2B4 /* AppDelegate.swift in Sources */,
 				59C8185329659C2200CDB2B4 /* Animation.swift in Sources */,
+				59EBABAA2966BA1F0051771E /* DataStore.swift in Sources */,
 				59C81841295F358B00CDB2B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
